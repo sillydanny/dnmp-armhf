@@ -1,3 +1,14 @@
+Mainly adapted to the DNMP of OneCloud armhf environment
+
+    The Hardware limitations of OneCloud, docker-compose.yml only includes Nginx + MySQL (Mariadb) + PHP7 + Portainer
+```
+7b659a7425e7   portainer/portainer:latest                 "/portainer"             23 hours ago        Up 20 hours        0.0.0.0:9010->9000/tcp                                                                                                                                                                     portainer
+edf0a3fa233e   mydock_nginx                               "nginx -g 'daemon of…"   43 hours ago        Up 20 hours        0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp, 0.0.0.0:8010->8010/tcp, 0.0.0.0:8020->8020/tcp, 0.0.0.0:8030->8030/tcp, 0.0.0.0:8040->8040/tcp, 0.0.0.0:8050->8050/tcp, 0.0.0.0:8080->8080/tcp   nginx
+66e5d541db8c   mydock_php                                 "docker-php-entrypoi…"   43 hours ago        Up 20 hours        9000/tcp, 9501/tcp                                                                                                                                                                         php
+c67306c6581b   linuxserver/mariadb                        "/init"                  43 hours ago        Up 20 hours        0.0.0.0:3306->3306/tcp
+```
+
+---
 Docker deploying Nginx MySQL PHP7/PHP5.6/PHP5.4 in one key, support full feature functions.
 
 **[[中文说明]](README.md)**

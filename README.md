@@ -1,5 +1,12 @@
 主要是適配玩客雲(OneCloud) armhf環境的DNMP
-
+> 由於玩客雲(OneCloud)硬件限制, docker-compose.yml 只包括 Nginx + MySQL(Mariadb) + PHP7 + Portainer
+```
+7b659a7425e7   portainer/portainer:latest                 "/portainer"             23 hours ago        Up 20 hours        0.0.0.0:9010->9000/tcp                                                                                                                                                                     portainer
+edf0a3fa233e   mydock_nginx                               "nginx -g 'daemon of…"   43 hours ago        Up 20 hours        0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp, 0.0.0.0:8010->8010/tcp, 0.0.0.0:8020->8020/tcp, 0.0.0.0:8030->8030/tcp, 0.0.0.0:8040->8040/tcp, 0.0.0.0:8050->8050/tcp, 0.0.0.0:8080->8080/tcp   nginx
+66e5d541db8c   mydock_php                                 "docker-php-entrypoi…"   43 hours ago        Up 20 hours        9000/tcp, 9501/tcp                                                                                                                                                                         php
+c67306c6581b   linuxserver/mariadb                        "/init"                  43 hours ago        Up 20 hours        0.0.0.0:3306->3306/tcp
+```
+---
 DNMP（Docker + Nginx + MySQL + PHP7/5 + Redis）是一款全功能的**LNMP一键安装程序**。
 
 > 使用前最好提前阅读一遍[目录](#目录)，以便快速上手，遇到问题也能及时排除。交流QQ群：**572041090**。
